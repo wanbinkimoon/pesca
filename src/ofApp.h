@@ -30,4 +30,30 @@ class ofApp : public ofBaseApp{
 		ofParameter<float> step;
 
 		ofxGui keyPanel;
+
+
+		// // line to past in your ofApp.h
+		// static const int keyNumb = 10;		
+		// bool keyValue [keyNumb];
+		// bool keyRadioValue = true;
+		// void keyLab(int key);
+
+
+		// void keyPanelSetup();
+		// void keyPanelUpdate();
+		// // void keyPanelDraw();
+
+		// ofParameter<bool> key1;
+		// ofParameter<bool> key2;
+		// ofParameter<bool> key3;
+		// ofParameter<bool> key4;
+		// ofParameter<bool> key5;
+		// ofParameter<bool> key6;
+		// ofParameter<bool> key7;
+		// ofParameter<bool> key8;
+		// ofParameter<bool> key9;
+		// ofParameter<bool> key0;
+		// ofParameter<bool> keyAsRadio;
+		// ofParameterGroup keyParams;
+		// ofxGui keyPanel;
 };
