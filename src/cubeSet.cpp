@@ -18,8 +18,8 @@ void ofApp::cubeUpdate(){
 // --------------------------------------------------------------
 
 void ofApp::cubeDraw(){
-	ofSetColor(125, 200, 100);
-	ofNoFill();
+
+
 
 	ofPushMatrix();
 	 	ofTranslate(ofGetWidth() / 2,  ofGetHeight() / 2);
@@ -32,14 +32,21 @@ void ofApp::cubeDraw(){
 		float cubeTime = ofGetFrameNum() * cubeRall;
 
 		for (int x = 0; x < sideNumb; ++x){
+
+
 			for (int y = 0; y < sideNumb; ++y){
 				float posX = (windowSide / sideNumb) * x + (side / 2) + (windowPadding / 2) - (ofGetWidth() / 2);
 				float posY = (windowSide / sideNumb) * y + (side / 2) + (windowPadding / 2) - (ofGetWidth() / 2);
-				
 				float waveX = ofMap(sin(x + cubeTime), -1, 1, 0, 40);
 				float waveY = ofMap(sin(y + cubeTime), -1, 1, 0, 40);
 				float waveCombo = waveX;
 				float wave = ofMap(waveCombo, 0, 40, side / 4, side);
+
+				int cubeR = (100 + ((int)wave * 10)) % 255;
+				int cubeG = (200 + ((int)wave * 2)) % 255;
+				int cubeB = (150 + ((int)wave)) % 255;
+				ofSetLineWidth(1);
+				ofNoFill(); ofSetColor(cubeR, cubeG, cubeB);
 				ofDrawBox(posX, posY, -100, wave);
 			}
 		}
