@@ -41,6 +41,9 @@ class ofApp : public ofBaseApp{
 		ofParameter<int> cubePadding;
 		ofParameter<int> sideNumb;
 		ofParameter<float> cubeRall;
+		ofParameter<bool> rotateScene;
+		ofParameter<bool> multiCube;
+		ofParameter<bool> horizWave;
 		ofxGui cubePanel;
 
 		// line to past in your ofApp.h
