@@ -42,7 +42,7 @@ void ofApp::sineDraw(){
 		
 		for (unsigned int j = 0; j <= sineH.size(); j++){
 			float rowX = ofMap(j, 0, sineH.size(), 0, ofGetWidth());
-			float rowY = ofGetHeight() - ofMap(sineH[j], 0, 1, 0, diff) - ((ofGetHeight() / (lines - 12)) * i);
+			float rowY = ofGetHeight() - ofMap(sineH[j], 0, 1, 0, diff) - ((ofGetHeight() / (lines - 12)) * (i + 1));
 			float x = rowX;
 			float y = rowY + ofNoise(2);
 			ofVertex(x, y);

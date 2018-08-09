@@ -14,7 +14,6 @@ void ofApp::setup(){
 void ofApp::update(){
 	sineUpdate();
 	cubeUpdate();
-	
 	keyPanelUpdate();	
 }
 
